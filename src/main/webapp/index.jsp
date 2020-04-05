@@ -40,12 +40,12 @@
 								<li>
 									 <a href="index.jsp">首页</a>
 								</li>
-								<%--<li>
+								<li>
 									 <a id="examCenter-link" target="home" style="cursor: pointer;" href="willexams?classId=${sessionScope.loginStudent.classInfo.classId }&gradeId=${sessionScope.loginStudent.grade.gradeId }&studentId=${sessionScope.loginStudent.studentId }" studentId="${sessionScope.loginStudent.studentId }">考试中心</a>
 								</li>
 								<li>
 									 <a id="mineCenter-link" target="home" style="cursor: pointer;" href="history/${sessionScope.loginStudent.studentId }" studentId="${sessionScope.loginStudent.studentId }">考试历史</a>
-								</li>--%>
+								</li>
 							</ul>
 							<ul class="nav navbar-nav navbar-right" style="margin-right: 10px;">
 								<li class="dropdown">
@@ -66,7 +66,7 @@
 									 </c:if>
 									 <c:if test="${sessionScope.loginStudent == null }">
 										<div class="btn-group" style="margin-top: 5px;">
-											<button type="button" class="btn btn-default btn-sm" id="studentLogin1">学生登录页面开发中……</button>
+											<button type="button" class="btn btn-default btn-sm" id="studentLogin">学生登录</button>
 											<button type="button" class="btn btn-default btn-sm" id="studentRegister">注册</button>
 											<a href="admin/login.jsp" target="_blank" class="btn btn-default btn-sm" id="studentLogin">登录后台</a>
 										</div>
